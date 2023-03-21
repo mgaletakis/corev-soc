@@ -1,0 +1,27 @@
+CAPI=2:
+# Copyright lowRISC contributors.
+# Licensed under the Apache License, Version 2.0, see LICENSE for details.
+# SPDX-License-Identifier: Apache-2.0
+name: "lowrisc:ibex:soc_core"
+description: "Ibex SoC"
+filesets:
+  files_rtl_soc:
+    depend:
+      - lowrisc:ibex:ibex_top
+      - pulp:riscv:debug_module
+    files:
+      - rtl/soc/ibex_soc.sv
+      - rtl/soc/dm_top.sv
+      - rtl/soc/debounce.sv
+      - rtl/soc/gpio.sv
+      - rtl/soc/pwm.sv
+      - rtl/soc/pwm_wrapper.sv
+      - rtl/soc/uart.sv
+      - rtl/soc/spi_host.sv
+      - rtl/soc/spi_top.sv
+    file_type: systemVerilogSource
+
+targets:
+  default:
+    filesets:
+      - files_rtl_soc
