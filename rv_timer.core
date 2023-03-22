@@ -9,7 +9,7 @@ filesets:
     depend:
       - lowrisc:prim:assert
     files:
-      - vendor/lowrisc_ibex/shared/rtl/timer.sv
+      - vendor/ibex/shared/rtl/timer.sv
     file_type: systemVerilogSource
 
 targets:
