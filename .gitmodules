@@ -1,3 +1,5 @@
 [submodule "vendor/ibex"]
 	path = vendor/ibex
-	url = https://github.com/mgaletakis/ibex.git
+	url = git@github.com:mgaletakis/ibex.git
+	branch = master
+	update = rebase
